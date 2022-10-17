@@ -6,4 +6,17 @@ router.get('/', (req,res) => {
         pagename: 'Home'
     });
 });
+
+router.get('/about', (req,res) => {
+    res.render('about' , {
+        pagename: 'About'
+    });
+});
+
+router.get('/services', (req,res) => {
+    res.render('services' , {
+        pagename: 'Services'
+    });
+});
+
 module.exports = router;
